@@ -25,7 +25,7 @@ Imported stylesheets. Remove the ones you do not want to use.
 */
 
 @import url("make-something-fly.css");
-@import url("animated-gradient.css");
+/* @import url("animated-gradient.css"); */
 @import url("text-stroke.css");
 @import url("stroke-shadow.css");
 @import url("scroll-to-top.css");
@@ -73,7 +73,7 @@ html {
   --heading-typeface: "Nunito", sans-serif;
   --project-title-typeface: "Nunito", sans-serif;
   --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
+  --background-color-about: #e6e7e8;
   --background-color-footer: #f5f5f5;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
@@ -94,11 +94,12 @@ html {
   --hover-color: #111;
   --visited-color: #5200ff;
   --project-title-color: #5200ff;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: white;
+  --project-sidebar-background-color: transparent;
+  --project-sidebar-text-color: #592e44;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #5200ff;
+  /* Colours on project page */
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
@@ -546,10 +547,6 @@ a:active {
   justify-content: center;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
-}
-
 .text-section {
   width: 100%;
 }
@@ -566,11 +563,11 @@ a:active {
   width: 100%;
   padding: 1rem;
   /* Delete the following if you do not want a gradient background on the project page */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     -225deg,
     var(--linear-gradient-color-1) 0%,
     var(--linear-gradient-color-2) 50%,
-    var(--linear-gradient-color-3) 100%
+    var(--linear-gradient-color-3) 100% */
   );
 }
 
@@ -593,12 +590,12 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background: linear-gradient(
+  /* background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 1),
       var(--background-color-holding-page)
     ),
-    url(/assets/temp/noise.svg);
+    url(/assets/temp/noise.svg); */
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -814,7 +811,7 @@ a.sub-navigation-link:hover {
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 2rem;
   }
 
   h2 {
@@ -826,19 +823,22 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 5rem;
+    width: 15%;
   }
 
+/* Where "Hello hello!" is. */
+
   .hero {
-    min-height: 100vh;
+    min-height: 20vh;
   }
 
   .hero-headline-wrapper {
     padding: 4rem 8rem;
+    line-height: 2rem;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-gap: 1rem;
   }
 
