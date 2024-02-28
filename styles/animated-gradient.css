@@ -1,9 +1,7 @@
 :root {
   --gradient: linear-gradient(
     45deg,
-    #e6e7e8,
-    #ecceb4,
-    #f28fbf,
+    /* #e6e7e8, */ /* #ecceb4, */ #f28fbf,
     #592e44,
     #775b69,
     #e6dbe2
