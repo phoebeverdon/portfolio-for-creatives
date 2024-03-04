@@ -1,6 +1,7 @@
 # portfolio-for-creatives
+
 ## A simple and modern portfolio template for creatives
- 
+
 A simple but highly customizable responsive template for graphic designers, illustrators, interactive designers, photographers, art directors, and more!
 
 **Set Up Instructions:**
@@ -17,7 +18,7 @@ A simple but highly customizable responsive template for graphic designers, illu
 4. Sign up to [netlify.com](https://www.netlify.com/) using your GitHub credentials.
 5. Add/import your GitHub repository to Netlify.
 6. Continue customizing the code in Visual Studio Code and push using GitHub Desktop to update your Netlify site.
- 
+
 **Easy things to change for beginners:**
 
 - Change the wording in the hero section of the work page.
@@ -68,4 +69,3 @@ Unlisted YouTube video tutorials are available for registered students. Please a
 ## For one-on-one support contact James for a Zoom session:
 
 Support for this template is available for registered students only.
- 

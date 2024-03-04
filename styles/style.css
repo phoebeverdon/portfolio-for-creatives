@@ -76,29 +76,29 @@ html {
   --background-color-about: #e6e7e8;
   --background-color-footer: #e6e7e8;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #592e44;
+  --background-color-holding-page: #ffb3ce;
+  --h1-color: #f28fbf;
   --h2-color: #f28fbf;
   --h3-color: #f28fbf;
-  --h4-color: #f28fbf;
+  --h4-color: #592e44;
   --h5-color: #f28fbf;
   --h6-color: #f28fbf;
   --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
+  --holding-page-title-color: #592e44;
   --accent-color: #592e44;
   --overlay-color: #592e44;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
   --hyperlink-color: #775b69;
-  --hyperlink-alternate-color: rgb(3, 3, 3);
+  --hyperlink-alternate-color: #775b69;
   --hover-color: #d9b8aa;
   --visited-color: #592e44;
   --project-title-color: #f28fbf;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: #592e44;
-  --heart-color: #fed4e1;
+  --heart-color: #ffb3ce;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
+  --text-selection-background-color: #d9b8aa;
   /* Colours on project page */
   /* --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
@@ -195,12 +195,16 @@ em {
   font-size: 0.875rem;
 }
 
+.hero-header {
+  padding: 2rem 2rem 0rem;
+}
+
 .hero-headline {
   color: var(--overlay-color);
 }
 
 .project-title {
-  font-size: 3.725rem;
+  font-size: 3rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -281,8 +285,8 @@ a:active {
 }
 
 .socials-list {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .social-item {
@@ -313,7 +317,7 @@ flex-direction: row;
 */
 
 .hero {
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
 }
@@ -322,22 +326,21 @@ flex-direction: row;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
   align-items: flex-start;
 }
 
 .logo {
-  width: 3rem;
+  width: 6.25rem;
 }
 
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 4rem;
-  text-align: center;
+  align-items: start;
+  justify-content: left;
+  padding: 2rem;
+  text-align: left;
 }
 
 .hero-icon {
@@ -437,6 +440,10 @@ flex-direction: row;
   flex: 1;
 }
 
+.about-image {
+  padding: 2rem 0rem;
+}
+
 .about-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -470,6 +477,7 @@ flex-direction: row;
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1rem;
   min-height: 25vh;
   background: var(--background-color-footer);
   padding: 1rem;
@@ -493,6 +501,7 @@ flex-direction: row;
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  padding: 0rem 0rem 2rem;
 }
 
 .awards-list {
@@ -574,7 +583,6 @@ flex-direction: row;
     var(--linear-gradient-color-1) 0%,
     var(--linear-gradient-color-2) 50%,
     var(--linear-gradient-color-3) 100% */
-  );
 }
 
 /* 
@@ -596,12 +604,12 @@ flex-direction: row;
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  /* background: linear-gradient(
+  background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 1),
+      #ebedf0,
       var(--background-color-holding-page)
     ),
-    url(/assets/temp/noise.svg); */
+    url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -623,7 +631,7 @@ flex-direction: row;
 
 .holding-page-copyright {
   font-size: 0.8rem;
-  color: var(--holding-page-footer-color);
+  color: var(--holding-page-title-color);
   margin-bottom: 0;
 }
 
@@ -654,6 +662,7 @@ flex-direction: row;
 }
 
 .error-page-wrapper {
+  padding: 2rem;
 }
 
 .error-page-inner-container {
@@ -807,6 +816,21 @@ a.sub-navigation-link:hover {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  /* .hero-headline-wrapper {
+    padding: 2rem 2rem;
+  }
+  
+  .hero-header {
+    padding: 2rem 2rem;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .hero {
+    min-height: 20vh;
+  } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -829,10 +853,8 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 15%;
+    width: 20%;
   }
-
-/* Where "Hello hello!" is. */
 
   .hero {
     min-height: 20vh;
