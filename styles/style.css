@@ -143,14 +143,14 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -192,7 +192,9 @@ em {
 }
 
 .fineprint {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  color: var(--holding-page-title-color);
+  margin-bottom: 0;
 }
 
 .hero-header {
@@ -249,18 +251,18 @@ a:active {
 }
 
 .navigation-arrow {
-  color: var(--alt-background-color);
+  color: var(--accent-color);
 }
 
 .navigation-arrow:link {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
+  color: var(--accent-color);
 }
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: var(--accent-color);
+  color: var(--hover-color);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--accent-color);
 }
@@ -291,6 +293,7 @@ a:active {
 .socials-list {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
 }
 
 .social-item {
@@ -330,7 +333,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .logo {
@@ -440,13 +443,12 @@ a:active {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   background: var(--background-color-about);
-  padding: 1rem;
   flex: 1;
 }
 
-.about-image {
+/* .about-image {
   padding: 2rem 0rem;
-}
+} */
 
 .about-item-1 {
   grid-column: 1 / 2;
@@ -806,21 +808,6 @@ a.sub-navigation-link:hover {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  /* .hero-headline-wrapper {
-    padding: 2rem 2rem;
-  }
-  
-  .hero-header {
-    padding: 2rem 2rem;
-  }
-
-  .logo {
-    width: 20%;
-  }
-
-  .hero {
-    min-height: 20vh;
-  } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -873,7 +860,9 @@ a.sub-navigation-link:hover {
   }
 
   .about {
-    padding: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
     grid-template-columns: 1fr 1fr;
   }
 
