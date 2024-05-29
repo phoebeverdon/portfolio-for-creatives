@@ -170,8 +170,9 @@ h4 {
 }
 
 h5 {
+  display: inline;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--h5-color);
 }
 
@@ -303,6 +304,11 @@ a:active {
   font-size: 1.225rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+.role-description {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 /* Hero 
@@ -667,6 +673,11 @@ a:active {
     var(--linear-gradient-color-1) 0%,
     var(--linear-gradient-color-2) 50%,
     var(--linear-gradient-color-3) 100% */
+}
+
+.navigation {
+  display: inline-block;
+  list-style-type: none;
 }
 
 /* 
