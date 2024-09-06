@@ -227,19 +227,19 @@ a:link {
 }
 
 a:visited {
-  color: var(--visited-color);
+  color: var(--hyperlink-color);
 }
 
 a:hover {
-  color: var(--hover-color);
+  color: var(--hyperlink-color);
 }
 
 a:focus {
-  outline: 1px solid var(--accent-color);
+  outline: var(--hyperlink-color);
 }
 
 a:active {
-  color: var(--hover-color);
+  color: var(--hyperlink-color);
   /* Tap on mobile */
 }
 
@@ -946,6 +946,9 @@ a.sub-navigation-link:hover {
     width: 15%;
   }
 
+  .header-navigation {
+    border: 2px dotted hotpink;
+  }
   .hero {
     min-height: 20vh;
   }
