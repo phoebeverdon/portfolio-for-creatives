@@ -342,8 +342,16 @@ a:active {
   gap: 1rem;
 } */
 
+.header-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
 .logo {
-  width: 6.25rem;
+  width: 10rem;
 }
 
 .hero-headline-wrapper {
@@ -943,12 +951,9 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 15%;
+    width: 14rem;
   }
 
-  .header-navigation {
-    border: 2px dotted hotpink;
-  }
   .hero {
     min-height: 20vh;
   }
