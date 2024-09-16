@@ -347,7 +347,6 @@ a:active {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 1rem;
 }
 
 .logo {
@@ -928,6 +927,11 @@ a.sub-navigation-link:hover {
   }
   .hero-header .menu-icon {
     display: none;
+  }
+  .header-navigation {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
