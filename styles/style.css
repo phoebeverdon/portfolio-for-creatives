@@ -143,9 +143,10 @@ svg {
 */
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
+  line-height: 1;
   color: var(--h1-color);
 }
 
@@ -943,7 +944,9 @@ a.sub-navigation-link:hover {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 4.225rem;
+    line-height: 1;
+    margin-right: 2rem;
   }
 
   h2 {
@@ -963,10 +966,12 @@ a.sub-navigation-link:hover {
   }
 
   .hero-headline-wrapper {
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 4rem 10rem;
     line-height: 3rem;
+    min-height: 80vh;
   }
 
   .grid {
