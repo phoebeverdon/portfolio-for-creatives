@@ -72,33 +72,33 @@ html {
   --body-typeface: "Nunito", sans-serif;
   --heading-typeface: "Nunito", sans-serif;
   --project-title-typeface: "Nunito", sans-serif;
-  --background-color: #e6e7e8;
-  --background-color-about: #e6e7e8;
-  --background-color-footer: #e6e7e8;
+  --background-color: #fff9f3;
+  --background-color-about: #fff9f3;
+  --background-color-footer: #fff9f3;
   --alt-background-color: #000000;
-  --background-color-holding-page: #ffb3ce;
-  --h1-color: #f28fbf;
-  --h2-color: #f28fbf;
-  --h3-color: #f28fbf;
-  --h4-color: #592e44;
-  --h5-color: #f28fbf;
-  --h6-color: #f28fbf;
+  --background-color-holding-page: #ffa1c2;
+  --h1-color: #653392;
+  --h2-color: #616be8;
+  --h3-color: #653392;
+  --h4-color: #282a60;
+  --h5-color: #616be8;
+  --h6-color: #653392;
   --primary-text-color: #222;
-  --holding-page-title-color: #592e44;
-  --accent-color: #592e44;
-  --overlay-color: #592e44;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
-  --hyperlink-color: #775b69;
-  --hyperlink-alternate-color: #775b69;
-  --hover-color: #d9b8aa;
-  --visited-color: #592e44;
-  --project-title-color: #f28fbf;
+  --holding-page-title-color: #282a60;
+  --accent-color: #ffa1c2;
+  --overlay-color: #ffa1c2;
+  --overlay-title-color: #fff9f3;
+  --overlay-description-color: #fff9f3;
+  --hyperlink-color: #616be8;
+  --hyperlink-alternate-color: #653392;
+  --hover-color: #ffa1c2;
+  --visited-color: #653392;
+  --project-title-color: #616be8;
   --project-sidebar-background-color: transparent;
-  --project-sidebar-text-color: #592e44;
-  --heart-color: #ffb3ce;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #d9b8aa;
+  --project-sidebar-text-color: #282a60;
+  --heart-color: #ffa1c2;
+  --holding-page-footer-color: #fff9f3;
+  --text-selection-background-color: #ffa1c2;
   /* Colours on project page */
   /* --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
@@ -1053,22 +1053,22 @@ a.sub-navigation-link:hover {
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   /* Sidebar on Large Devices */
   .project-aside {
-    width: 35%;
-    height: 65vh;
+    width: 100%;
+    /* height: 65vh;
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
-    padding-right: 2rem;
+    padding-right: 2rem; */
   }
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    width: 100%;
   }
 
   .project-image {
