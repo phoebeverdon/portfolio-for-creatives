@@ -11,6 +11,7 @@ Add the Google Fonts you want, remove the ones you don't.
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 
 /*
 
@@ -69,9 +70,9 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Nunito", sans-serif;
-  --heading-typeface: "Nunito", sans-serif;
-  --project-title-typeface: "Nunito", sans-serif;
+  --body-typeface: "Fredoka", sans-serif;
+  --heading-typeface: "Fredoka", sans-serif;
+  --project-title-typeface: "Fredoka", sans-serif;
   --background-color: #fff9f3;
   --background-color-about: #fff9f3;
   --background-color-footer: #fff9f3;
@@ -85,7 +86,7 @@ html {
   --h6-color: #653392;
   --primary-text-color: #222;
   --holding-page-title-color: #282a60;
-  --accent-color: #ffa1c2;
+  --accent-color: #ED5E8E;
   --overlay-color: #ffa1c2;
   --overlay-title-color: #fff9f3;
   --overlay-description-color: #fff9f3;
@@ -99,11 +100,6 @@ html {
   --heart-color: #ffa1c2;
   --holding-page-footer-color: #fff9f3;
   --text-selection-background-color: #ffa1c2;
-  /* Colours on project page */
-  /* --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
-  --stroke-shadow-color: rgba(0, 0, 0, 0.4); */
 }
 
 body {
@@ -145,6 +141,7 @@ svg {
 h1 {
   font-size: 3rem;
   font-family: var(--heading-typeface);
+  font-weight: 500;
   margin-bottom: 1rem;
   line-height: 1;
   color: var(--h1-color);
@@ -326,8 +323,12 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 2rem 0rem;
+  padding: 2rem 2rem 2rem;
   align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+background: var(--background-color);
 }
 
 /* .hero {
@@ -352,6 +353,16 @@ a:active {
 
 .logo {
   width: 10rem;
+}
+
+#e29qEF5ShJb1 {
+  fill: #616be8;
+}
+
+#e29qEF5ShJb1:hover {
+  fill: var(--accent-color);
+}
+
 }
 
 .hero-headline-wrapper {
