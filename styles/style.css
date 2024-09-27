@@ -86,7 +86,7 @@ html {
   --h6-color: #653392;
   --primary-text-color: #222;
   --holding-page-title-color: #282a60;
-  --accent-color: #ED5E8E;
+  --accent-color: #ed5e8e;
   --overlay-color: #ffa1c2;
   --overlay-title-color: #fff9f3;
   --overlay-description-color: #fff9f3;
@@ -325,10 +325,10 @@ a:active {
   justify-content: space-between;
   padding: 2rem 2rem 2rem;
   align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-background: var(--background-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: var(--background-color);
 }
 
 /* .hero {
@@ -361,8 +361,6 @@ background: var(--background-color);
 
 #e29qEF5ShJb1:hover {
   fill: var(--accent-color);
-}
-
 }
 
 .hero-headline-wrapper {
