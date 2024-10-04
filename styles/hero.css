@@ -8,5 +8,5 @@
   /*Fallback if gradeints don't work */
   background: #fff9f3;
   /*Linear gradient... */
-  background: radial-gradient(at center, #ffa1c2, #fff9f3);
+  background: radial-gradient(at center, #ffc9dc, #fff9f3);
 }
