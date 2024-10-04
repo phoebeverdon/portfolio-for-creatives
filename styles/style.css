@@ -328,7 +328,7 @@ a:active {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: var(--background-color);
+  /* background: var(--background-color); */
 }
 
 /* .hero {
