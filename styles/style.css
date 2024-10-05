@@ -86,7 +86,7 @@ html {
   --h6-color: #653392;
   --primary-text-color: #222;
   --holding-page-title-color: #282a60;
-  --accent-color: #ed5e8e;
+  --accent-color: #ffa1c2;
   --overlay-color: #ffa1c2;
   --overlay-title-color: #fff9f3;
   --overlay-description-color: #fff9f3;
@@ -718,7 +718,7 @@ a:active {
   /* Delete the following if you do not want a grainy gradient background on the holding page */
   background: linear-gradient(
       0deg,
-      #ebedf0,
+      var(--background-color),
       var(--background-color-holding-page)
     ),
     url(/assets/temp/noise.svg);
