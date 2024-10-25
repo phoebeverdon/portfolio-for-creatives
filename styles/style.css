@@ -189,8 +189,9 @@ p {
 }
 
 .social-media-logo {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
+
 em {
   font-style: italic;
 }
@@ -554,6 +555,11 @@ a:active {
   padding: 1em;
   background-color: var(--overlay-color);
   transition: opacity 0.3s, visibility 0.3s;
+}
+
+.unveiling-eclipse {
+  width: 100%;
+  height: 66.7%;
 }
 
 .work-page-grid-item:hover .overlay {
@@ -1004,8 +1010,8 @@ a.sub-navigation-link:hover {
     font-size: 1.625rem;
   }
 
-  .social-media-logo{
-    font-size: 2.5rem;
+  .social-media-logo {
+    font-size: 5rem;
   }
   .logo {
     width: 16rem;
@@ -1023,9 +1029,9 @@ a.sub-navigation-link:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 4rem 10rem;
+    padding: 1rem 10rem;
     line-height: 3rem;
-    min-height: 85vh;
+    min-height: 72vh;
   }
 
   .hero-headline-intro {
