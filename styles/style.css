@@ -562,6 +562,11 @@ a:active {
   height: 66.7%;
 }
 
+.establishing-shot {
+  width: 100%;
+  height: 72.9%;
+}
+
 .work-page-grid-item:hover .overlay {
   visibility: visible;
   opacity: 0.8;
