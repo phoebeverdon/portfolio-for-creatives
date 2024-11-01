@@ -188,12 +188,12 @@ p {
   margin-bottom: 1rem;
 }
 
-.social-media-logo {
+a.social-media-logo {
   font-size: 2.5rem;
   fill: var(--h6-color);
 }
 
-.social-media-logo:hover {
+a.social-media-logo:hover {
   fill: var(--h5-color);
 }
 
