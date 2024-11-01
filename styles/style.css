@@ -10,7 +10,6 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 
 /*
@@ -79,7 +78,7 @@ html {
   --alt-background-color: #ffffff;
   --background-color-holding-page: #ffa1c2;
   --h1-color: #653392;
-  --h2-color: #616be8;
+  --h2-color: #653392;
   --h3-color: #653392;
   --h4-color: #653392;
   --h5-color: #616be8;
@@ -150,6 +149,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   font-family: var(--heading-typeface);
+  font-weight: 500;
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
@@ -190,6 +190,11 @@ p {
 
 .social-media-logo {
   font-size: 2.5rem;
+  fill: var(--h6-color);
+}
+
+.social-media-logo:hover {
+  fill: var(--h5-color);
 }
 
 em {
@@ -362,11 +367,11 @@ a:active {
   display: inline;
 }
 #e29qEF5ShJb1 {
-  fill: #616be8;
+  fill: var(--h6-color);
 }
 
 #e29qEF5ShJb1:hover {
-  fill: var(--h6-color);
+  fill: var(--hyperlink-color);
 }
 
 .hero-headline-wrapper {
@@ -394,7 +399,7 @@ a:active {
 }
 
 .arrow {
-  width: 4rem;
+  width: 6rem;
 }
 
 .menu-words {
