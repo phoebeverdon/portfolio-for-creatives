@@ -188,15 +188,6 @@ p {
   margin-bottom: 1rem;
 }
 
-a.social-media-logo {
-  font-size: 2.5rem;
-  fill: var(--h6-color);
-}
-
-a.social-media-logo:hover {
-  fill: var(--h5-color);
-}
-
 em {
   font-style: italic;
 }
@@ -250,6 +241,15 @@ a:focus {
 a:active {
   color: var(--hyperlink-color);
   /* Tap on mobile */
+}
+
+a.social-media-logo {
+  font-size: 2.5rem;
+  color: var(--h6-color);
+}
+
+a.social-media-logo:hover {
+  color: var(--h5-color);
 }
 
 .navigation-arrow {
