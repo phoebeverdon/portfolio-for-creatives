@@ -78,9 +78,9 @@ html {
   --alt-background-color: #ffffff;
   --background-color-holding-page: #ffa1c2;
   --h1-color: #653392;
-  --h2-color: #653392;
+  --h2-color: #ed5e8e;
   --h3-color: #653392;
-  --h4-color: #653392;
+  --h4-color: #351f3f;
   --h5-color: #616be8;
   --h6-color: #ed5e8e;
   --primary-text-color: #351f3f;
@@ -245,7 +245,7 @@ a:active {
 
 a.social-media-logo {
   font-size: 2.5rem;
-  color: var(--h6-color);
+  color: var(--h1-color);
 }
 
 a.social-media-logo:hover {
