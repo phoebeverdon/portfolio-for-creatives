@@ -1,12 +1,6 @@
 .radial-gradient {
-  /* position:fixed;
-  top:0px;
-  left:0px;
-  height:100%;
-  width:100%; */
-
   /*Fallback if gradeints don't work */
   background: #fff9f3;
   /*Linear gradient... */
-  background: radial-gradient(at center, #ffd7e5, #fff9f3);
+  background: radial-gradient(at center, #ffd8e6, #fff9f3);
 }

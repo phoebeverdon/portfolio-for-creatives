@@ -29,7 +29,7 @@
 .hamburger .hamburger--container .hamburger--bars {
   height: 3px;
   width: 1.5em;
-  background: #000;
+  background: var(--h2-color);
   position: absolute;
   top: 0.9em;
   transition: 0.3s ease;
@@ -66,7 +66,7 @@
   width: 0;
   height: 100vh;
   padding: 8em 3em 3em;
-  background: #000;
+  background: var(--background-color);
   position: absolute;
   right: 0;
   overflow: hidden;
@@ -110,7 +110,7 @@
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: white;
+  color: var(--h2-color);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -136,7 +136,6 @@
   font-size: 5em;
   font-weight: 700;
   letter-spacing: 10px;
-  text-transform: uppercase;
   line-height: 1;
   height: 1em;
   display: inline-block;

@@ -331,10 +331,6 @@ a.social-media-logo:hover {
 */
 
 .hero-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 2rem 2rem 1rem;
   top: 0;
 }
@@ -345,12 +341,12 @@ a.social-media-logo:hover {
   flex-direction: column;
 } */
 
-/* .branding-navigation {
+.branding-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  gap: 1rem;
-} */
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* .header-navigation {
   display: flex;
@@ -402,85 +398,11 @@ a.social-media-logo:hover {
   width: 6rem;
 }
 
-.menu-words {
+.menu-wrapper {
   display: none;
 }
 
 /* Hamburger Menu Styles Begin Here */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.menu-overlay {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  overflow: hidden;
-  background: #fff9f3;
-  z-index: 100;
-  transform: translateX(110%);
-  transition: transform 0.5s ease;
-}
-
-.fas {
-  font-size: 2rem;
-  color: #ed5e8e;
-}
-
-.fas:hover {
-  color: #616be8;
-}
-
-.menu-overlay .fas {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 2.5rem;
-  transition: all 0.3s ease;
-}
-.menu-overlay .fas:hover {
-  color: #616be8;
-  transform: scale(1.1) rotate(180deg);
-}
-
-.menu-overlay ul {
-  height: 100%;
-  width: 100%;
-  list-style: none;
-  padding: 20px;
-  margin-left: 50px;
-  font-size: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-}
-
-.menu-overlay a {
-  color: #ed5e8e;
-  text-decoration: none;
-}
-
-.menu-overlay a:hover {
-  color: #616be8;
-}
-
-#menuBtn {
-  display: none;
-}
-
-#menuBtn:checked ~ .menu-overlay {
-  transform: translateX(0);
-}
-
-.menu {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
 
 /* End of hamburger menu styles */
 
@@ -970,22 +892,32 @@ a.sub-navigation-link:hover {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-  .menu {
+  .hamburger {
     display: none;
   }
 
   .menu-words {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .menu-item {
     padding-right: 1.875rem;
   }
 
-  .menu .holding-page-title {
-    font-size: 2rem;
+  .menu-wrapper {
+    display: flex;
   }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* .menu .holding-page-title {
+    font-size: 2rem;
+  } */
 
   h1 {
     font-size: 6rem;
