@@ -71,7 +71,7 @@ html {
 
 :root {
   --body-typeface: "Fredoka", sans-serif;
-  --heading-typeface: "Fredoka", sans-serif;
+  --heading-typeface: "Playfair+Display", serif;
   --project-title-typeface: "Fredoka", sans-serif;
   --background-color: #fff9f3;
   --background-color-about: #fff9f3;
@@ -82,7 +82,7 @@ html {
   --h2-color: #ed5e8e;
   --h3-color: #653392;
   --h4-color: #653392;
-  --h5-color: #616be8;
+  --h5-color: #ed5e8e;
   --h6-color: #653392;
   --primary-text-color: #351f3f;
   --holding-page-title-color: #653392;
@@ -94,7 +94,6 @@ html {
   --hyperlink-alternate-color: #653392;
   --hover-color: #ffa1c2;
   --visited-color: #653392;
-  --project-title-color: #616be8;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: #653392;
   --heart-color: #ffa1c2;
@@ -140,17 +139,17 @@ svg {
 
 h1 {
   font-family: var(--heading-typeface);
-  font-size: 3.125rem;
   font-weight: 700;
+  font-size: 3.125rem;
   margin-bottom: 1rem;
   line-height: 1;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 1.75rem;
   font-family: var(--heading-typeface);
-  font-weight: 500;
+  font-weight: 900;
+  font-size: 1.75rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -174,8 +173,9 @@ h4 {
 }
 
 h5 {
+  font-weight: 500;
   display: inline;
-  font-size: 1.1rem;
+  font-size: 3.125rem;
   margin-bottom: 0.5rem;
   color: var(--h5-color);
 }
@@ -196,14 +196,6 @@ em {
   font-style: italic;
 }
 
-.playfair-display {
-  font-family: "playfair display", serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 3rem;
-  color: var(--h1-color);
-}
-
 .fineprint {
   font-size: 0.8rem;
   color: var(--holding-page-title-color);
@@ -212,13 +204,6 @@ em {
 
 .hero-headline {
   color: var(--overlay-color);
-}
-
-.project-title {
-  font-size: 3rem;
-  font-family: var(--project-title-typeface);
-  color: var(--project-title-color);
-  margin-bottom: 1rem;
 }
 
 .overlay-title {
@@ -311,6 +296,7 @@ a.social-media-logo:hover {
   display: flex;
   flex-direction: row;
   margin-bottom: 1rem;
+  margin-top: 0.3rem;
 }
 
 .social-item {
@@ -323,15 +309,15 @@ a.social-media-logo:hover {
   margin-left: 1.2rem;
 }
 
-.project-description {
+/* .project-description {
   font-size: 1.225rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-}
+} */
 
 .role-description {
   padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding-left: 0.938rem;
 }
 
 /* Hero 
@@ -392,15 +378,21 @@ a.social-media-logo:hover {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: left;
+  min-height: 100vh;
+}
+
+.hero-headline-intro {
+  width: 17.188rem;
+  margin-bottom: 2rem;
 }
 
 .hero-message {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3rem;
+  padding-top: 2rem;
 }
 
 .hero-header ul {
@@ -459,7 +451,7 @@ a.social-media-logo:hover {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -598,7 +590,6 @@ a.social-media-logo:hover {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  color: var(--project-sidebar-text-color);
   background: var(--project-sidebar-background-color);
 }
 
@@ -619,8 +610,15 @@ a.social-media-logo:hover {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
   /* min-height should be deleted if you want to remove space between project images on project pages */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.project-image-2 {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -634,6 +632,10 @@ a.social-media-logo:hover {
   width: 100%;
   font-size: 3.25rem;
   padding: 3rem;
+}
+
+.project-info {
+  margin-bottom: 2.813rem;
 }
 
 /* Main Project Image Area */
@@ -884,6 +886,54 @@ a.sub-navigation-link:hover {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  h1 {
+    font-family: var(--heading-typeface);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: var(--heading-typeface);
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-family: var(--heading-typeface);
+    font-weight: 500;
+    font-size: 1.563rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-family: var(--body-typeface);
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  h5 {
+    font-family: var(--heading-typeface);
+    font-weight: 900;
+    font-size: 1.563rem;
+    margin-bottom: 0.5rem;
+    display: inline;
+  }
+
+  h6 {
+    font-family: var(--body-typeface);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
   p {
     font-size: 1.125rem;
     line-height: 1.4;
@@ -891,6 +941,15 @@ a.sub-navigation-link:hover {
 
   .list a {
     font-size: 2rem;
+  }
+
+  .hero-message {
+    padding: 3rem;
+  }
+
+  .hero-headline-intro {
+    width: 25rem;
+    margin-bottom: 2rem;
   }
 
   .grid {
@@ -925,24 +984,6 @@ a.sub-navigation-link:hover {
     flex-direction: row;
   }
 
-  h1 {
-    font-size: 6rem;
-    font-family: var(--heading-typeface);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    font-family: var(--heading-typeface);
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 1.625rem;
-  }
-
   .social-media-logo {
     font-size: 2.3rem;
   }
@@ -961,16 +1002,12 @@ a.sub-navigation-link:hover {
 
   .hero-headline-wrapper {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 1rem 3rem;
     line-height: 3rem;
-    min-height: 73vh;
   }
 
   .hero-headline-intro {
-    display: flex;
-    flex-direction: column;
+    width: 90rem;
     padding-right: 10rem;
   }
 
@@ -986,7 +1023,7 @@ a.sub-navigation-link:hover {
   }
 
   .global-footer {
-    padding: 4rem 6rem 4rem;
+    padding: 4rem;
     grid-template-columns: 1fr 1fr;
     grid-gap: 6rem 1rem;
   }
@@ -1053,6 +1090,10 @@ a.sub-navigation-link:hover {
   /* Sidebar on Large Devices */
   .project-aside {
     width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     /* height: 65vh;
     position: -webkit-sticky;
     position: sticky;
@@ -1088,11 +1129,32 @@ a.sub-navigation-link:hover {
   }
 }
 
+/* Slightly larger devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .hero-headline-intro {
+    width: 30rem;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero-headline-wrapper {
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-align: left;]
+  }
+}
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
 /* X-Large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
+  .hero-headline-wrapper {
+    flex-direction: column;
+  }
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
     grid-gap: 1rem;
