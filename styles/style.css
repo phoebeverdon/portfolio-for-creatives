@@ -382,7 +382,7 @@ a.social-media-logo:hover {
   justify-content: center;
   padding: 0 2rem;
   text-align: left;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .hero-headline-intro {
@@ -394,7 +394,8 @@ a.social-media-logo:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 2rem;
+  justify-content: center;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 .hero-header ul {
@@ -1141,7 +1142,7 @@ a.sub-navigation-link:hover {
 @media (min-width: 1024px) {
   .hero-headline-intro {
     width: 30rem;
-    padding-right: 10rem;
+    padding-right: 6rem;
     margin-bottom: 2rem;
   }
 
@@ -1154,7 +1155,7 @@ a.sub-navigation-link:hover {
     text-align: left;
     display: flex;
     text-align: left;
-    min-height: 100vh;
+    min-height: 75vh;
   }
 }
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
