@@ -181,7 +181,9 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-weight: 500;
+  font-size: 1.125rem;
   line-height: 1.3;
   margin-bottom: 1rem;
   color: var(--h6-color);
@@ -1004,6 +1006,12 @@ a.sub-navigation-link:hover {
     flex-direction: row;
     padding: 1rem 3rem;
     line-height: 3rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    min-height: 100vh;
   }
 
   .hero-headline-intro {
@@ -1133,17 +1141,20 @@ a.sub-navigation-link:hover {
 @media (min-width: 1024px) {
   .hero-headline-intro {
     width: 30rem;
-    padding: 0;
+    padding-right: 10rem;
     margin-bottom: 2rem;
   }
 
   .hero-headline-wrapper {
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    text-align: left;]
+    text-align: left;
+    display: flex;
+    text-align: left;
+    min-height: 100vh;
   }
 }
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
@@ -1152,7 +1163,15 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   .hero-headline-wrapper {
-    flex-direction: column;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-align: left;
+    display: flex;
+    text-align: left;
+    min-height: 100vh;
   }
 
   .grid {
