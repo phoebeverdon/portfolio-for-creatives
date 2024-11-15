@@ -443,6 +443,7 @@ a.social-media-logo:hover {
 
 .work-wrapper {
   flex: 1;
+  background: white;
 }
 
 /* Padding around work grid and project page */
@@ -456,6 +457,7 @@ a.social-media-logo:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
+  align-items: center;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -464,13 +466,6 @@ a.social-media-logo:hover {
   height: auto;
   position: relative;
   /* Required to contain overlay size */
-}
-
-.work-page-grid-item-square {
-  width: 100%;
-  height: auto;
-  position: relative;
-  align-self: center;
 }
 
 /* Overlay */
@@ -971,6 +966,7 @@ a.sub-navigation-link:hover {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
     grid-gap: 1rem;
+    align-items: center;
   }
 }
 
@@ -1148,6 +1144,7 @@ a.sub-navigation-link:hover {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(992px, 1fr));
     grid-gap: 1rem;
+    align-items: center;
   }
 }
 
@@ -1191,6 +1188,7 @@ a.sub-navigation-link:hover {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
     grid-gap: 1rem;
+    align-items: center;
   }
 }
 
