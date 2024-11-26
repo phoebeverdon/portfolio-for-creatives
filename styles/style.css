@@ -230,7 +230,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--hyperlink-color);
+  color: var(--hover-color);
 }
 
 a:focus {
@@ -247,7 +247,7 @@ a.social-media-logo {
 }
 
 a.social-media-logo:hover {
-  color: var(--h5-color);
+  color: var(--hover-color);
 }
 
 .social-media-logo {
@@ -371,7 +371,7 @@ a.social-media-logo:hover {
 }
 
 #e29qEF5ShJb1:hover {
-  fill: var(--hyperlink-color);
+  fill: var(--hover-color);
 }
 
 .hero-headline-wrapper {
@@ -931,6 +931,10 @@ a.sub-navigation-link:hover {
     font-size: 1.563rem;
     margin-bottom: 0.5rem;
     display: inline;
+  }
+
+  h5:hover {
+    color: (var(--overlay-color));
   }
 
   h6 {
