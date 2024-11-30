@@ -183,7 +183,7 @@ h5 {
 h6 {
   font-family: var(--body-typeface);
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.3;
   margin-bottom: 1rem;
   color: var(--h6-color);
@@ -1166,7 +1166,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero-headline-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
     align-items: center;
     justify-content: center;
@@ -1174,7 +1174,7 @@ a.sub-navigation-link:hover {
     text-align: left;
     display: flex;
     text-align: left;
-    min-height: 75vh;
+    min-height: 73vh;
   }
 }
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
@@ -1191,7 +1191,6 @@ a.sub-navigation-link:hover {
     text-align: left;
     display: flex;
     text-align: left;
-    min-height: 100vh;
   }
 
   .grid {
