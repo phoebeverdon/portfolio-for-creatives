@@ -243,7 +243,7 @@ a:active {
 }
 
 a.social-media-logo {
-  color: var(--h1-color);
+  color: var(--hyperlink-color);
 }
 
 a.social-media-logo:hover {
@@ -543,6 +543,15 @@ a.social-media-logo:hover {
   grid-gap: 1rem;
   min-height: 25vh;
   background: var(--background-color-footer);
+  padding: 6rem 2rem 2rem;
+}
+
+.about-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  min-height: 25vh;
+  background: transparent;
   padding: 6rem 2rem 2rem;
 }
 
