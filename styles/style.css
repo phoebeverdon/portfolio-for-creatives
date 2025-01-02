@@ -358,7 +358,7 @@ a.social-media-logo:hover {
 } */
 
 .logo {
-  width: 14rem;
+  width: 8rem;
 }
 
 /* .name {
@@ -366,11 +366,11 @@ a.social-media-logo:hover {
   flex-direction: row;
 } */
 
-#e29qEF5ShJb1 {
+#eGAuZ4SX0Jl1 {
   fill: var(--h2-color);
 }
 
-#e29qEF5ShJb1:hover {
+#eGAuZ4SX0Jl1:hover {
   fill: var(--hover-color);
 }
 
@@ -1018,7 +1018,7 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 16rem;
+    width: 12rem;
   }
 
   .hero {
