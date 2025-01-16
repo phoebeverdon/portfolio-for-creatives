@@ -584,6 +584,7 @@ a.social-media-logo:hover {
 .back-to-top {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 /* Project Page 
